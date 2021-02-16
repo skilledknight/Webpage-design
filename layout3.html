@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3</title>
+
+    <style>
+
+        .cli {
+            color: white;
+            font-size: 30px;
+            font-family:sans-serif;
+            display: inline-block;
+            transform: translateY(8px);
+            border: 10px;
+            padding-left: 15px;
+            
+        }
+        .box {
+            background-color: red; 
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+
+        .link1{
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+            font-family: sans-serif;
+        }
+
+        .link1:hover{
+            background-color: brown;
+            padding: 15px;
+        }
+
+        .link2{
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+            font-family: sans-serif;
+        }
+        .link2:hover{
+            background-color: brown;
+            padding: 15px;
+        }
+        .link3{
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+            font-family: sans-serif;
+        }
+        .link3:hover{
+            background-color: brown;
+            padding: 15px;
+        }
+        .link4{
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+            font-family: sans-serif;
+        }
+        .link4:hover{
+            background-color: brown;
+            padding: 15px;
+        }
+        #img1{
+            padding-left: 20px;
+            width: 10%;
+            vertical-align: middle;
+           }
+
+       .main {
+           background-color: brown;
+           height: 60vh;
+       }
+
+       .col-1{
+           position: absolute;
+           top: 20%;
+           left: 18%;
+       }
+
+       .col-2{
+           position: absolute;
+           top: 20%;
+           left: 55%;
+           color: white;
+           font-family: sans-serif;
+       }
+       .btn {
+           padding: 10px 50px;
+           margin-top: 30px;
+           color: brown;
+           font-size: 15px;
+           
+       }
+
+       .btn1{
+           padding: 10px 50px;
+           margin-top: 30px;
+           color: white;
+           font-size: 15px;
+           background-color:brown;
+           margin-left: 640px;
+           margin-bottom: 30px;
+       }
+
+       .middle-content{
+           padding-left: 295px;
+           font-family: Arial, Helvetica, sans-serif;
+           color: slategray;
+           padding-top: 40px;
+       }
+
+       .footer{
+           background-color:#263238;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           height: 15vh;
+      
+       }
+
+       .footer1{
+           color:#cdcfd1;
+           float: right;
+       }
+       .footer1 img {
+           float: left;
+       }
+
+       .footer1 p{
+           padding-left: 180px;
+           font-family: Arial, Helvetica, sans-serif;
+           padding-top: 30px;
+       }
+       .footer2 p{
+           color:#576165;
+           padding-left: 120px;
+           font-family: Arial, Helvetica, sans-serif;
+           padding-top: 30px;
+           font-size: 13px;
+           
+       }
+    </style>
+</head>
+<body style="margin: 0px;">
+    
+  
+    <div class="box">
+    <header class="top">
+    <div class="row">
+        <span><a href="#"><img src="2.png" id="img1" alt=""><span class="cli">CLI</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="link1" href="#">DOCUMENTATION</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        <a class="link2" href="#">GITHUB</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <a class="link3" href="#">RELEASES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="link4" href="#">GET STARTED</a>
+    </span>
+</div>
+    </div>
+
+</header>
+
+<section class="main">
+
+    <div class="col-1">
+        <img src="1.png" id="img2" alt="">
+    </div>
+    
+    <div class="col-2">
+        <h1>Angular CLI</h1>
+        <p>A command line interface for Angular</p>
+        <button class="btn">GET STARTED</button>
+    </div>
+</section>
+
+<section class="middle">
+
+    <div class="middle-content">
+        <h1>ng new</h1>
+        <p>The Angular CLI makes it easy to create an application that already works, right out of the box. It <br>already follows our best practices!</p>
+    </div>
+
+    <div class="middle-content">
+        <h1>ng generate</h1>
+        <p>Generate components, routes, services and pipes with a simple command. The CLI will also create<br> simple test shells for all of these.</p>
+    </div>
+
+    <div class="middle-content">
+        <h1>ng serve</h1>
+        <p>Easily test your app locally while developing.</p>
+    </div>
+
+    <div class="middle-content">
+        <h1>Test, Lint</h1>
+        <p>Make your code really shine. Run your unit tests, your end-to-end tests, or execute the official<br> Angular linter with the breeze of a command.</p>
+    </div>
+
+    <button class="btn1">GET STARTED</button>
+</section>
+
+<section class="footer">
+
+    <div class="footer1">
+    <img src="3.png">
+    <p>Learn Angular</p>
+    </div>
+   
+    <div class="footer2">
+    <p>Powered by Google. Code licensed under an MIT-style License. Documentation licensed under CC BY 4.0.</p>
+    </div>
+
+
+</section>
+</body>
+</html>
